@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
-
 <body>
   <div class="loader" aria-hidden="true">
     <div class="loader__bar"><span></span></div>
@@ -43,18 +42,9 @@
 
   <nav class="menu" id="menu" aria-hidden="true">
     <div class="menu__inner">
-      <a href="#work" data-menu-close>
-        <small>01</small>
-        <strong data-tr="İŞLER" data-en="WORK">İŞLER</strong>
-      </a>
-      <a href="#info" data-menu-close>
-        <small>02</small>
-        <strong data-tr="BİLGİ" data-en="INFO">BİLGİ</strong>
-      </a>
-      <a href="#contact" data-menu-close>
-        <small>03</small>
-        <strong data-tr="İLETİŞİM" data-en="CONTACT">İLETİŞİM</strong>
-      </a>
+      <a href="#work" data-menu-close><small>01</small><strong data-tr="İŞLER" data-en="WORK">İŞLER</strong></a>
+      <a href="#info" data-menu-close><small>02</small><strong data-tr="BİLGİ" data-en="INFO">BİLGİ</strong></a>
+      <a href="#contact" data-menu-close><small>03</small><strong data-tr="İLETİŞİM" data-en="CONTACT">İLETİŞİM</strong></a>
     </div>
   </nav>
 
@@ -66,109 +56,34 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero__role">
-        <span data-tr="VİDEO EDİTÖRÜ" data-en="VIDEO EDITOR">VİDEO EDİTÖRÜ</span>
-        <i aria-hidden="true"></i>
-      </div>
-
+      <div class="hero__role"><span id="hero-role" data-tr="VİDEO EDİTÖRÜ" data-en="VIDEO EDITOR">VİDEO EDİTÖRÜ</span><i aria-hidden="true"></i></div>
       <div class="hero__bottom">
-        <p data-tr="Görüntü, ritim ve hikâye."
-           data-en="Image, rhythm and story.">
-          Görüntü, ritim ve hikâye.
-        </p>
-        <span>01 — 05</span>
+        <p id="hero-copy" data-tr="Görüntü, ritim ve hikâye." data-en="Image, rhythm and story.">Görüntü, ritim ve hikâye.</p>
+        <span id="project-range">01 — 05</span>
       </div>
     </section>
 
-    <section class="work" id="work" aria-label="Portfolio">
-      <article class="project" data-index="01">
-        <button class="project__button" type="button" aria-label="Project 01">
-          <div class="project__meta">
-            <span class="project__number">01</span>
-            <h2>Project 01</h2>
-            <span class="project__view" data-tr="PROJEYİ GÖR" data-en="VIEW PROJECT">PROJEYİ GÖR</span>
-          </div>
-          <div class="project__media project__media--01">
-            <span data-tr="VİDEO / GÖRSEL ALANI" data-en="VIDEO / IMAGE AREA">VİDEO / GÖRSEL ALANI</span>
-          </div>
-        </button>
-      </article>
-
-      <article class="project" data-index="02">
-        <button class="project__button" type="button" aria-label="Project 02">
-          <div class="project__meta">
-            <span class="project__number">02</span>
-            <h2>Project 02</h2>
-            <span class="project__view" data-tr="PROJEYİ GÖR" data-en="VIEW PROJECT">PROJEYİ GÖR</span>
-          </div>
-          <div class="project__media project__media--02">
-            <span data-tr="VİDEO / GÖRSEL ALANI" data-en="VIDEO / IMAGE AREA">VİDEO / GÖRSEL ALANI</span>
-          </div>
-        </button>
-      </article>
-
-      <article class="project" data-index="03">
-        <button class="project__button" type="button" aria-label="Project 03">
-          <div class="project__meta">
-            <span class="project__number">03</span>
-            <h2>Project 03</h2>
-            <span class="project__view" data-tr="PROJEYİ GÖR" data-en="VIEW PROJECT">PROJEYİ GÖR</span>
-          </div>
-          <div class="project__media project__media--03">
-            <span data-tr="VİDEO / GÖRSEL ALANI" data-en="VIDEO / IMAGE AREA">VİDEO / GÖRSEL ALANI</span>
-          </div>
-        </button>
-      </article>
-
-      <article class="project" data-index="04">
-        <button class="project__button" type="button" aria-label="Project 04">
-          <div class="project__meta">
-            <span class="project__number">04</span>
-            <h2>Project 04</h2>
-            <span class="project__view" data-tr="PROJEYİ GÖR" data-en="VIEW PROJECT">PROJEYİ GÖR</span>
-          </div>
-          <div class="project__media project__media--04">
-            <span data-tr="VİDEO / GÖRSEL ALANI" data-en="VIDEO / IMAGE AREA">VİDEO / GÖRSEL ALANI</span>
-          </div>
-        </button>
-      </article>
-
-      <article class="project" data-index="05">
-        <button class="project__button" type="button" aria-label="Project 05">
-          <div class="project__meta">
-            <span class="project__number">05</span>
-            <h2>Project 05</h2>
-            <span class="project__view" data-tr="PROJEYİ GÖR" data-en="VIEW PROJECT">PROJEYİ GÖR</span>
-          </div>
-          <div class="project__media project__media--05">
-            <span data-tr="VİDEO / GÖRSEL ALANI" data-en="VIDEO / IMAGE AREA">VİDEO / GÖRSEL ALANI</span>
-          </div>
-        </button>
-      </article>
-    </section>
+    <section class="work" id="work" aria-label="Portfolio"></section>
 
     <section class="reserved" id="info">
-      <span data-tr="BİLGİ +" data-en="INFO +">BİLGİ +</span>
+      <span id="info-label" data-tr="BİLGİ +" data-en="INFO +">BİLGİ +</span>
       <div class="reserved__line"></div>
-      <span data-tr="SONRA EKLENECEK" data-en="COMING LATER">SONRA EKLENECEK</span>
+      <span id="info-text" data-tr="SONRA EKLENECEK" data-en="COMING LATER">SONRA EKLENECEK</span>
     </section>
 
     <section class="reserved" id="contact">
-      <span data-tr="İLETİŞİM +" data-en="CONTACT +">İLETİŞİM +</span>
+      <span id="contact-label" data-tr="İLETİŞİM +" data-en="CONTACT +">İLETİŞİM +</span>
       <div class="reserved__line"></div>
-      <span data-tr="SONRA EKLENECEK" data-en="COMING LATER">SONRA EKLENECEK</span>
+      <span id="contact-text" data-tr="SONRA EKLENECEK" data-en="COMING LATER">SONRA EKLENECEK</span>
     </section>
   </main>
 
   <div class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project preview">
     <button class="modal__close" type="button" aria-label="Kapat">×</button>
-
     <div class="modal__content">
       <span class="modal__number">01</span>
       <h2>Project 01</h2>
-      <div class="modal__media">
-        <span data-tr="VİDEO BURAYA GELECEK" data-en="VIDEO WILL GO HERE">VİDEO BURAYA GELECEK</span>
-      </div>
+      <div class="modal__media"><span data-tr="VİDEO BURAYA GELECEK" data-en="VIDEO WILL GO HERE">VİDEO BURAYA GELECEK</span></div>
     </div>
   </div>
 

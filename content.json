@@ -1,0 +1,79 @@
+{
+  "site": {
+    "heroRole": {
+      "tr": "VİDEO EDİTÖRÜ",
+      "en": "VIDEO EDITOR"
+    },
+    "heroCopy": {
+      "tr": "Görüntü, ritim ve hikâye.",
+      "en": "Image, rhythm and story."
+    },
+    "infoLabel": {
+      "tr": "BİLGİ +",
+      "en": "INFO +"
+    },
+    "infoText": {
+      "tr": "SONRA EKLENECEK",
+      "en": "COMING LATER"
+    },
+    "contactLabel": {
+      "tr": "İLETİŞİM +",
+      "en": "CONTACT +"
+    },
+    "contactText": {
+      "tr": "SONRA EKLENECEK",
+      "en": "COMING LATER"
+    }
+  },
+  "typography": {
+    "fontFamily": "\"Grotesk\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "brandSize": 11,
+    "heroSize": 42,
+    "projectTitleSize": 62,
+    "menuTitleSize": 112,
+    "modalTitleSize": 120,
+    "smallTextSize": 9
+  },
+  "projects": [
+    {
+      "number": "01",
+      "title": {
+        "tr": "Project 01",
+        "en": "Project 01"
+      },
+      "youtubeUrl": ""
+    },
+    {
+      "number": "02",
+      "title": {
+        "tr": "Project 02",
+        "en": "Project 02"
+      },
+      "youtubeUrl": ""
+    },
+    {
+      "number": "03",
+      "title": {
+        "tr": "Project 03",
+        "en": "Project 03"
+      },
+      "youtubeUrl": ""
+    },
+    {
+      "number": "04",
+      "title": {
+        "tr": "Project 04",
+        "en": "Project 04"
+      },
+      "youtubeUrl": ""
+    },
+    {
+      "number": "05",
+      "title": {
+        "tr": "Project 05",
+        "en": "Project 05"
+      },
+      "youtubeUrl": ""
+    }
+  ]
+}
