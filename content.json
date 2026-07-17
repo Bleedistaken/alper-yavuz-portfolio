@@ -27,21 +27,21 @@
   },
   "typography": {
     "fontFamily": "\"Grotesk\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-    "brandSize": 11,
-    "heroSize": 42,
+    "brandSize": 15,
+    "heroSize": 55,
     "projectTitleSize": 62,
     "menuTitleSize": 112,
     "modalTitleSize": 120,
-    "smallTextSize": 9
+    "smallTextSize": 11
   },
   "projects": [
     {
       "number": "01",
       "title": {
-        "tr": "Project 01",
-        "en": "Project 01"
+        "tr": "Eternal Fire - Vlog",
+        "en": "Eternal Fire - Vlog"
       },
-      "youtubeUrl": ""
+      "youtubeUrl": "https://www.youtube.com/watch?v=gjLHYWS1vmQ"
     },
     {
       "number": "02",
