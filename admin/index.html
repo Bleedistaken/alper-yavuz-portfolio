@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#000000">
+  <title>Alper Yavuz — Admin</title>
+  <link rel="stylesheet" href="admin.css">
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="login" id="login-view">
+      <a class="mini-brand" href="../"><span>Alper</span> <b>Yavuz</b></a>
+      <div class="login-card">
+        <span class="eyebrow">ADMIN PANEL</span>
+        <h1>İçeriği yönet.</h1>
+        <p>Şifren Vercel Environment Variables içinde tutulur.</p>
+        <form id="login-form">
+          <label>Admin şifresi<input id="password" type="password" autocomplete="current-password" required></label>
+          <button type="submit">GİRİŞ YAP →</button>
+        </form>
+        <p class="status" id="login-status" role="status"></p>
+      </div>
+    </section>
+
+    <section class="panel is-hidden" id="panel-view">
+      <header class="topbar">
+        <a class="mini-brand" href="../"><span>Alper</span> <b>Yavuz</b></a>
+        <div class="topbar-actions">
+          <a href="../" target="_blank" rel="noopener">SİTEYİ AÇ ↗</a>
+          <button id="logout" type="button">ÇIKIŞ</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <form id="content-form" class="editor">
+          <section class="editor-section">
+            <span class="section-no">01</span>
+            <div><h2>Tipografi</h2><p>Fontu ve temel yazı boyutlarını buradan değiştir.</p></div>
+            <div class="fields two">
+              <label class="wide">Font
+                <select id="font-preset">
+                  <option value='"Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif'>Grotesk / Helvetica</option>
+                  <option value='"Helvetica Neue", Helvetica, Arial, sans-serif'>Helvetica Neue</option>
+                  <option value='Arial, sans-serif'>Arial</option>
+                  <option value='Georgia, serif'>Georgia</option>
+                  <option value='"Times New Roman", serif'>Times New Roman</option>
+                  <option value='"Courier New", monospace'>Courier New</option>
+                  <option value="custom">Özel CSS font adı</option>
+                </select>
+              </label>
+              <label class="wide custom-font is-hidden">Özel font ailesi<input id="font-custom" placeholder='Örn: "Neue Montreal", Arial, sans-serif'></label>
+              <label>Logo <span>px</span><input id="brand-size" type="number" min="8" max="30"></label>
+              <label>Hero metni <span>px</span><input id="hero-size" type="number" min="18" max="120"></label>
+              <label>Proje başlığı <span>px</span><input id="project-size" type="number" min="22" max="150"></label>
+              <label>Menü başlığı <span>px</span><input id="menu-size" type="number" min="30" max="180"></label>
+              <label>Modal başlığı <span>px</span><input id="modal-size" type="number" min="30" max="200"></label>
+              <label>Küçük yazılar <span>px</span><input id="small-size" type="number" min="7" max="18"></label>
+            </div>
+          </section>
+
+          <section class="editor-section">
+            <span class="section-no">02</span>
+            <div><h2>Ana sayfa metni</h2><p>Türkçe ve İngilizce alanları ayrı düzenlenir.</p></div>
+            <div class="fields two">
+              <label>Rol — TR<input id="hero-role-tr"></label>
+              <label>Rol — EN<input id="hero-role-en"></label>
+              <label>Hero — TR<textarea id="hero-copy-tr" rows="3"></textarea></label>
+              <label>Hero — EN<textarea id="hero-copy-en" rows="3"></textarea></label>
+            </div>
+          </section>
+
+          <section class="editor-section projects-section">
+            <span class="section-no">03</span>
+            <div><h2>Projeler ve YouTube</h2><p>Normal YouTube, youtu.be ve Shorts URL’leri kabul edilir.</p></div>
+            <div id="projects-editor" class="projects-editor"></div>
+          </section>
+
+          <div class="publish-bar">
+            <div><strong id="save-state">Değişiklik yok.</strong><span id="save-detail">Kaydettiğinde GitHub’a commit atılır ve Vercel yeniden yayınlar.</span></div>
+            <button id="publish" type="submit">YAYINLA →</button>
+          </div>
+        </form>
+
+        <aside class="preview">
+          <span class="preview-label">CANLI ÖNİZLEME</span>
+          <div class="preview-screen" id="preview-screen">
+            <div class="preview-logo"><span>Alper</span> <b>Yavuz</b></div>
+            <div class="preview-role" id="preview-role">VİDEO EDİTÖRÜ</div>
+            <div class="preview-copy" id="preview-copy">Görüntü, ritim ve hikâye.</div>
+            <div class="preview-project"><small>01</small><strong id="preview-project-title">PROJECT 01</strong><span>PROJEYİ GÖR →</span></div>
+          </div>
+          <p>Bu önizleme tipografi ve metin değişikliklerini anında gösterir. Tam site, yayınlamadan sonra güncellenir.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
