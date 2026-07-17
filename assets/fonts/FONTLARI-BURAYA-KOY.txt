@@ -1,0 +1,3 @@
+Grotesk-Thin.woff2
+Grotesk-Regular.woff2
+Grotesk-Bold.woff2
